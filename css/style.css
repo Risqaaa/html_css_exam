@@ -82,9 +82,58 @@ body {
 
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
     border-top: 2px solid #6971be;
 }
 
 .getstarted:hover {
     box-shadow: 0 0 5px #2B292D;
 }
+
+.learnmore {
+    padding: 18px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: #3040C4;
+    font-weight: bold;
+    border-top: 2px solid #ffffff;
+}
+
+.learnmore:hover {
+    box-shadow: 0 0 5px #2B292D;
+}
+
+.promo {
+    height: 520px;
+    background-color: #F3C6BD;
+}
+
+.promo .container {
+    background-image: url(/img/img1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.promo .getstarted {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.promo__content {
+    width: 60%;
+}
+
+.promo__content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.promo__content p {
+    width: 60%;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+
