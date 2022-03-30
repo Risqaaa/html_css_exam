@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: #F3C6BD;
+    background-color: #EFB9AF;
 }
 
 .header .container {
@@ -73,6 +73,42 @@ body {
     margin-right: 50px;
 }
 
+.nav li {
+    position: relative;
+}
+
+.nav li:hover > ul {
+    display: flex;
+}
+
+.nav li ul {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 0px 0px 20px;
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+    display: none;
+    top: 30px;
+}
+
+.nav li ul li {
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.nav li ul li a:hover {
+    color:#009B4D;
+    text-shadow: none;
+}
+
+.nav li ul li ul {
+    z-index: 2;
+    right: -290px;
+    top: -30px;
+}
+
 .getstarted {
     margin: 0 75px;
 
@@ -107,13 +143,10 @@ body {
 
 .promo {
     height: 520px;
-    background-color: #F3C6BD;
-}
-
-.promo .container {
+    background-color: #EFB9AF;
     background-image: url(/img/img1.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 200px bottom;
 }
 
 .promo .getstarted {
@@ -190,7 +223,7 @@ body {
 }
 
 .features {
-    background-color: #e5e5e5;
+    background-color: #F4F5F7;
     margin-top: 100px;
 
     display: flex;
@@ -236,7 +269,7 @@ body {
 }
 
 .accordion {
-    background-color: #e5e5e5;
+    background-color: #F4F5F7;
     color: #444;
     cursor: pointer;
     padding: 18px 36px;
@@ -288,7 +321,7 @@ body {
 
 .panel {
     /*padding: 0 18px;*/
-    background-color: #e5e5e5;
+    background-color: #F4F5F7;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -298,4 +331,170 @@ body {
 .panel p {
     padding: 0 0 20px 0;
     border-bottom: 3px solid #3142C6;
+}
+
+.contact {
+    padding: 80px 0;
+}
+
+.contactus {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+}
+
+.contactus__title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.signup__field_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.signup__field:not(:first-child) {
+    margin-top: 20px;
+}
+
+.signup__field input {
+    width: 100%;
+    height: 50px;
+    padding: 20px 15px;
+    line-height: 36px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+}
+
+.signup__field textarea {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.contact__btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3040C4;
+    border: 0;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 2px solid #6971be;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contact__btn:hover {
+    box-shadow: 0 0 5px #2B292D;
+}
+
+.start {
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
+
+.start .container {
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start__content {
+    width: 550px;
+    margin-left: 150px;
+}
+
+.start__content h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.start__content p {
+    font-size: 22px;
+    padding: 30px 0;
+}
+
+.start__content input {
+    width: 60%;
+    height: 50px;
+    padding: 20px 15px;
+    line-height: 36px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+
+    margin-right: 10px;
+}
+
+.start__content button {
+    border: 0;
+    padding: 14px 30px;
+    background-color: #3040C4;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #6971be;
+    cursor: pointer;
+}
+
+.start__content button:hover {
+    box-shadow: 0 0 5px #2B292D;
+}
+
+.start__content_form {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    padding-top: 60px;
+}
+
+.footer__uls {
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.footer__uls h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.footer__socials {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__socials a:not(:first-child) {
+    margin-left: 20px;
+}
+
+.footer__uls ul li {
+    opacity: 60%;
+    list-style: none;
+}
+
+.footer__uls ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer__uls ul a {
+    text-decoration: none;
+    color: #2B292D;
+}
+
+.footer__uls ul a:hover {
+    text-shadow: 0 0 2px #444;
 }

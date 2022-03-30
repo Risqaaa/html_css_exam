@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +22,22 @@
 
             <nav class="nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li>
+                    <a href="">Home</a>
+                    <ul>
+                        <li>
+                            <a href="#">Acquire Users</a>
+                            <ul>
+                                <li><a href="#">Engage Customers</a></li>
+                                <li><a href="#">Book Appointments</a></li>
+                                <li><a href="#">Generate Leads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Engage Customers</a></li>
+                        <li><a href="#">Book Appointments</a></li>
+                        <li><a href="#">Generate Leads</a></li>
+                    </ul>
+                    </li>
                     <li><a href="">Stories</a></li>
                     <li><a href="">Library</a></li>
                 </ul>
@@ -142,15 +158,90 @@
     </section>
 
     <section class="contact">
-        contact
+        <div class="container">
+            <form method="post">
+                <div class="contactus">
+                    <h2 class="contactus__title">Contact Us</h2>
+                    <div class="signup__field">
+                        <div class="signup__field_title">Your Email Address</div>
+                        <input placeholder="something@website.com" type="email" name="email" />
+                    </div>
+                    <div class="signup__field">
+                        <div class="signup__field_title">Subject</div>
+                        <input value="Question about your article" type="text" name="subject" />
+                    </div>
+                    <div class="signup__field">
+                        <div class="signup__field_title">Message</div>
+                        <textarea placeholder="Your message starts with…" name="message" cols="30" rows="7"></textarea>
+                    </div>
+                    <button class="contact__btn">Send a Message</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <section class="start">
-        start
+        <div class="container">
+            <img src="./img/img4.png" alt="#">
+            <div class="start__content">
+                <h2>Start your free trial.</h2>
+                <p>Get notified about company updates, news and blog posts. We hate spam.</p>
+                <div class="start__content_form">
+                    <input placeholder="Enter your email" type="email" name="email">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        footer
+        <div class="container">
+            <div class="footer__uls">
+                <div class="footer__uls_ul1">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Acquire Users</a></li>
+                        <li><a href="#">Content Marketing</a></li>
+                        <li><a href="#">Website Templates</a></li>
+                        <li><a href="#">Customer Management</a></li>
+                        <li><a href="#">Virtual Inbox</a></li>
+                    </ul>
+                </div>
+                <div class="footer__uls_ul2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Foundation</a></li>
+                        <li><a href="#">Brand Guidelines</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer__uls_ul3">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Acquire Users</a></li>
+                        <li><a href="#">Content Marketing</a></li>
+                        <li><a href="#">Website Templates</a></li>
+                        <li><a href="#">Customer Management</a></li>
+                        <li><a href="#">Virtual Inbox</a></li>
+                    </ul>
+                </div>
+                <div class="footer__uls_ul4">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Foundation</a></li>
+                        <li><a href="#">Brand Guidelines</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><img src="./img/icon_twitter.png" alt="#"></a>
+                <a href="#"><img src="./img/icon_fb.png" alt="#"></a>
+                <a href="#"><img src="./img/icon_linkedin.png" alt="#"></a>
+            </div>
+        </div>
     </footer>
     
 </body>
